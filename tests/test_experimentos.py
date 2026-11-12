@@ -1,5 +1,7 @@
-"""Prueba rápida del barrido de umbrales (pocos conductores)."""
+"""Pruebas rápidas de los scripts de experimentos (sin cámara ni datos reales)."""
+import numpy as np
 import pandas as pd
+import pytest
 
 from scripts.experimentos import umbrales
 
@@ -77,3 +79,34 @@ def test_escenarios_ignora_calibracion():
                        "calibrando": [True, True], "emergencia": [True, True]})
     r = escenarios.resumir_escenario("falso", df)
     assert r["nivel_max"] == "NORMAL" and not r["emergencia"]
+
+
+# ------------------------------------------------------------- analizar_video
+def _df_video(n=60):
+    t = np.arange(n) / 10.0
+    return pd.DataFrame({
+        "t": t, "nivel": ["NORMAL"] * 40 + ["ALTO"] * (n - 40), "ear": np.full(n, 0.3),
+        "ear_umbral": np.full(n, 0.21), "rostro": [True] * (n - 10) + [False] * 10,
+        "calibrando": t < 2.0, "emergencia": [False] * n,
+        "motivos": [""] * 40 + ["microsueno"] * (n - 40)})
+
+
+def test_video_resumen_y_salidas(tmp_path):
+    from scripts.experimentos import analizar_video as av
+
+    df = _df_video()
+    r = av.resumir(df)
+    assert r["fotogramas"] == 60 and abs(r["pct_rostro"] - 100 * 50 / 60) < 1e-6
+    assert r["motivos"] == {"microsueno": 20}
+    assert abs(sum(r["pct_nivel"].values()) - 100) < 1e-6
+    av.escribir_md(r, "demo.mp4", tmp_path / "video.md")
+    av.escribir_png(df, tmp_path / "video.png")
+    assert "microsueno" in (tmp_path / "video.md").read_text(encoding="utf-8")
+    assert (tmp_path / "video.png").stat().st_size > 0
+
+
+def test_video_inexistente_falla(tmp_path):
+    from scripts.experimentos import analizar_video as av
+
+    with pytest.raises(SystemExit):
+        av.main(["--video", str(tmp_path / "no_existe.mp4"), "--salida", str(tmp_path)])
