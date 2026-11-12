@@ -51,3 +51,29 @@ def test_entorno_revisiones_basicas(tmp_path):
     assert filas == {"data": True, "otra": False}
     lib = ve.revisar_librerias([("numpy", "numpy"), ("inexistente", "modulo_que_no_existe_xyz")])
     assert [f["ok"] for f in lib] == [True, False]
+
+
+# ----------------------------------------------------------------- escenarios
+def test_escenarios_resultados_esperados(tmp_path):
+    from core.simulacion import ESCENARIOS
+    from scripts.experimentos import escenarios
+
+    res = escenarios.main(["--semilla", "42", "--salida", str(tmp_path)])
+    assert list(res["escenario"]) == list(ESCENARIOS) and len(res) == 7
+    por = res.set_index("escenario")
+    assert por.loc["normal", "nivel_max"] == "NORMAL" and not por.loc["normal", "emergencia"]
+    assert por.loc["microsueno", "nivel_max"] == "ALTO"
+    assert por.loc["sin_respuesta", "emergencia"]
+    assert por.loc["sin_respuesta", "t_emergencia_s"] > por.loc["sin_respuesta", "t_nivel_max_s"]
+    assert (res.loc[res["nivel_max"] != "NORMAL", "t_nivel_max_s"] >= 10.0).all()   # tras calibrar
+    assert (tmp_path / "escenarios.csv").stat().st_size > 0
+    assert "sin_respuesta" in (tmp_path / "escenarios.md").read_text(encoding="utf-8")
+
+
+def test_escenarios_ignora_calibracion():
+    from scripts.experimentos import escenarios
+
+    df = pd.DataFrame({"t": [0.0, 1.0], "nivel": ["ALTO", "ALTO"], "motivos": ["x", "x"],
+                       "calibrando": [True, True], "emergencia": [True, True]})
+    r = escenarios.resumir_escenario("falso", df)
+    assert r["nivel_max"] == "NORMAL" and not r["emergencia"]

@@ -1,0 +1,8 @@
+escenario,duracion_s,nivel_max,t_nivel_max_s,motivos,emergencia,t_emergencia_s
+normal,59.9,NORMAL,10.0,,False,
+cansancio,99.9,MEDIO,40.0,"cansancio_perclos,bostezos",False,
+microsueno,39.9,ALTO,21.53,microsueno,False,
+sin_respuesta,49.9,ALTO,21.53,"microsueno,cansancio_perclos",True,31.53
+distraccion,39.9,MEDIO,23.0,distraccion,False,
+cabeceos,59.9,MEDIO,40.47,cabeceos,False,
+rostro_ausente,39.9,MEDIO,23.0,rostro_ausente,False,
