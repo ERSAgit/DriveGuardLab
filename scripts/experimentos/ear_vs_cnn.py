@@ -162,6 +162,22 @@ def escribir_md(r: dict, video: str, intervalos, ruta: Path) -> None:
                "resultado debería ser optimista, no una evaluación con otros conductores. Las etiquetas "
                "por intervalo no incluyen parpadeos normales dentro de los tramos abiertos ni la "
                "transición al cerrar o abrir los ojos, lo que penaliza a ambos métodos.", ""]
+    lineas += ["## Limitaciones", "",
+               "- **Etiquetas frente a la señal:** los intervalos cerrados dados no coinciden con los tramos "
+               "donde EAR ve los ojos cerrados (ver la sección anterior), por lo que la exactitud de EAR "
+               "queda por debajo del azar. Se mantuvieron las etiquetas originales; no se corrigieron.",
+               "- **La CNN no discrimina en este video:** predice «cerrado» casi siempre (probabilidad media "
+               "similar en tramos cerrados y abiertos), de modo que su exactitud (~50 %) y su F1 de cerrado "
+               "(~0.67) son triviales. Su 100 % de exactitud en `cnn.md` no se traslada al video.",
+               "- **Causa probable:** los recortes de entrenamiento son muy oscuros y las clases se capturaron "
+               "en ráfagas separadas, así que la red pudo aprender diferencias de iluminación entre ráfagas en "
+               "lugar del estado del ojo. La partición temporal no lo detecta, porque cada clase se reparte "
+               "dentro de su propia ráfaga.",
+               "- **Qué haría falta:** recapturar ojos abiertos y cerrados intercalados y con iluminación "
+               "variada, y verificar las etiquetas del video. No se probó el reentrenamiento ni se modificó "
+               "`core/ojos_cnn.py`.",
+               "- **Alcance:** una sola persona, un solo video y 450 fotogramas útiles; las cifras no son "
+               "generalizables.", ""]
     ruta.write_text("\n".join(lineas), encoding="utf-8")
 
 
