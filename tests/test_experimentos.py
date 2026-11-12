@@ -110,3 +110,47 @@ def test_video_inexistente_falla(tmp_path):
 
     with pytest.raises(SystemExit):
         av.main(["--video", str(tmp_path / "no_existe.mp4"), "--salida", str(tmp_path)])
+
+
+# ------------------------------------------------------------------ ear_vs_cnn
+def test_ear_vs_cnn_intervalos_y_etiquetas():
+    from scripts.experimentos import ear_vs_cnn as ev
+
+    assert ev.parsear_intervalos(["10-20", "30-35"]) == [(10.0, 20.0), (30.0, 35.0)]
+    for malo in ("20-10", "abc", "10"):
+        with pytest.raises(ValueError):
+            ev.parsear_intervalos([malo])
+    y = ev.etiquetar([5, 10, 19.9, 20, 31], [(10, 20), (30, 35)])
+    assert y.tolist() == [1, 0, 0, 1, 0]
+
+
+def test_ear_vs_cnn_metricas_con_df_sintetico(tmp_path):
+    from scripts.experimentos import ear_vs_cnn as ev
+
+    t = np.arange(0, 40, 0.5)
+    cerrado = ((t >= 10) & (t < 20)) | ((t >= 30) & (t < 35))
+    df = pd.DataFrame({"t": t, "rostro": True, "calibrando": t < 5.0, "ear_cerrado": cerrado,
+                       "prob_cnn_cerrado": np.where(cerrado, 0.9, 0.1)})
+    df.loc[df["t"] == 12.0, "rostro"] = False                    # fotograma sin rostro: excluido
+    r = ev.evaluar(df, [(10, 20), (30, 35)])
+    assert r["n_sin_rostro"] == 1 and r["n_calibracion"] == 10
+    assert r["metodos"]["EAR"]["exactitud"] == 1.0 and r["metodos"]["CNN"]["por_clase"][0]["f1"] == 1.0
+    assert r["tramos_ear"][0][0] == 10.0
+    # una CNN que siempre dice "cerrado" tiene exactitud ~ proporción de cerrados
+    df["prob_cnn_cerrado"] = 0.99
+    peor = ev.evaluar(df, [(10, 20), (30, 35)])["metodos"]["CNN"]
+    assert peor["por_clase"][1]["f1"] == 0.0 and peor["exactitud"] < 0.5
+    ev.escribir_md(r, "demo.mp4", [(10, 20), (30, 35)], tmp_path / "ear_vs_cnn.md")
+    texto = (tmp_path / "ear_vs_cnn.md").read_text(encoding="utf-8")
+    assert "F1 cerrado" in texto and "Contraste con la señal" in texto
+
+
+def test_ear_vs_cnn_sin_modelo_o_video_falla(tmp_path):
+    from scripts.experimentos import ear_vs_cnn as ev
+
+    with pytest.raises(SystemExit):
+        ev.main(["--video", str(tmp_path / "x.mp4"), "--salida", str(tmp_path)])
+    (tmp_path / "v.mp4").write_bytes(b"x")
+    with pytest.raises(SystemExit):
+        ev.main(["--video", str(tmp_path / "v.mp4"), "--modelo", str(tmp_path / "no.pt"),
+                 "--salida", str(tmp_path)])
