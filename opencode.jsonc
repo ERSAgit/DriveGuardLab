@@ -1,0 +1,39 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  // OpenCode 1.x: cada servidor MCP va directo bajo "mcp" (sin "mcp.servers").
+  "mcp": {
+    "mongodb": {
+      "type": "local",
+      "command": ["cmd", "/c", "mongodb-mcp-server"],
+      "environment": {
+        "MDB_MCP_READ_ONLY": "true",
+        "MDB_MCP_CONNECTION_STRING": "mongodb://localhost:27017/driveguard_lab"
+      },
+      "enabled": true
+    },
+    "playwright": {
+      "type": "local",
+      "command": ["cmd", "/c", "npx", "-y", "@playwright/mcp@latest"],
+      "enabled": true
+    }
+  },
+  // La última regla que coincide gana: el comodín va primero.
+  "permission": {
+    "edit": "ask",
+    "bash": {
+      "*": "ask",
+      "python -m pytest*": "allow",
+      "git status*": "allow",
+      "git diff*": "allow",
+      "git log*": "allow",
+      "git push*": "deny",
+      "rm -rf*": "deny"
+    },
+    "read": {
+      "*": "allow",
+      "*.env": "deny",
+      "*.env.*": "deny",
+      "*.env.example": "allow"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+id,t_s,fecha,nivel,motivos,ear,ear_umbral,mar,perclos,bostezos,cabeceos,rostro,expresion,tipo,sesion_id,nivel_anterior
+6ae806a9d50d4cff3fcadf69,44672.0,2026-11-02 03:42:32.933,NORMAL,[],0.2276,0.2182,0.0231,0.0,0,0,True,enojo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae806aed50d4cff3fcadf6a,44677.093,2026-11-02 03:42:38.031,NORMAL,[],0.2246,0.2182,0.0506,0.0,0,0,True,enojo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae806b3d50d4cff3fcadf6b,44682.171,2026-11-02 03:42:43.109,NORMAL,[],0.1508,0.2182,1.0278,0.2527,0,1,True,expresión neutral,muestra,6ae8069fd50d4cff3fcadf68,
+6ae806b9d50d4cff3fcadf6c,44683.015,2026-11-02 03:42:43.994,ALTO,['microsueno'],0.1063,0.2182,0.9895,0.299,0,1,True,expresión neutral,microsueno,6ae8069fd50d4cff3fcadf68,NORMAL
+6ae806b9d50d4cff3fcadf6d,44687.046,2026-11-02 03:42:48.024,NORMAL,[],0.2753,0.2182,0.1008,0.3481,1,1,True,expresión neutral,recuperacion,6ae8069fd50d4cff3fcadf68,ALTO
+6ae806b9d50d4cff3fcadf6e,44687.187,2026-11-02 03:42:48.140,NORMAL,[],0.2541,0.2182,0.1414,0.3456,1,1,True,enojo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae806b9d50d4cff3fcadf6f,44688.0,2026-11-02 03:42:48.940,BAJO,['expresion_negativa'],0.1314,0.2182,0.6123,0.3919,1,1,True,enojo aparente,expresion_negativa,6ae8069fd50d4cff3fcadf68,NORMAL
+6ae806bed50d4cff3fcadf70,44688.968,2026-11-02 03:42:49.939,ALTO,"['microsueno', 'expresion_negativa']",0.0985,0.2182,1.0218,0.4268,1,1,True,enojo aparente,microsueno,6ae8069fd50d4cff3fcadf68,BAJO
+6ae806bed50d4cff3fcadf71,44692.281,2026-11-02 03:42:53.220,ALTO,"['microsueno', 'expresion_negativa']",0.0718,0.2182,1.1453,0.5385,2,2,True,enojo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae806c3d50d4cff3fcadf72,44697.343,2026-11-02 03:42:58.269,ALTO,"['microsueno', 'cabeza_caida', 'expresion_negativa']",0.0637,0.2182,0.0746,0.6386,2,2,True,enojo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae806c8d50d4cff3fcadf73,44702.375,2026-11-02 03:43:03.315,ALTO,"['microsueno', 'cansancio_perclos']",0.1352,0.2182,0.0183,0.7125,2,2,True,expresión neutral,muestra,6ae8069fd50d4cff3fcadf68,
+6ae806ced50d4cff3fcadf74,44707.453,2026-11-02 03:43:08.380,ALTO,"['microsueno', 'cabeza_caida', 'cansancio_perclos', 'cabeceos']",0.1456,0.2182,0.0247,0.7534,2,3,True,expresión neutral,muestra,6ae8069fd50d4cff3fcadf68,
+6ae806fad50d4cff3fcadf76,44712.5,2026-11-02 03:43:13.434,ALTO,"['microsueno', 'cabeza_caida', 'cansancio_perclos', 'cabeceos']",0.1343,0.2182,0.0232,0.7862,2,3,True,expresión neutral,muestra,6ae8069fd50d4cff3fcadf68,
+6ae806fad50d4cff3fcadf77,44717.5,2026-11-02 03:43:18.437,ALTO,"['microsueno', 'cabeza_caida', 'cansancio_perclos', 'cabeceos']",0.1241,0.2182,0.0413,0.8073,2,3,True,expresión neutral,muestra,6ae8069fd50d4cff3fcadf68,
+6ae806fad50d4cff3fcadf78,44722.5,2026-11-02 03:43:23.441,ALTO,"['microsueno', 'cabeza_caida', 'cansancio_perclos', 'cabeceos']",0.0997,0.2182,0.02,0.8315,2,3,True,expresión neutral,muestra,6ae8069fd50d4cff3fcadf68,
+6ae806fad50d4cff3fcadf79,44727.578,2026-11-02 03:43:28.519,ALTO,"['microsueno', 'cabeza_caida', 'cansancio_perclos', 'cabeceos']",0.0895,0.2182,0.0305,0.849,2,3,True,expresión neutral,muestra,6ae8069fd50d4cff3fcadf68,
+6ae806fad50d4cff3fcadf7a,44732.593,2026-11-02 03:43:33.533,ALTO,"['microsueno', 'cabeza_caida', 'cansancio_perclos', 'cabeceos']",0.0871,0.2182,0.0236,0.8726,2,3,True,expresión neutral,muestra,6ae8069fd50d4cff3fcadf68,
+6ae806fad50d4cff3fcadf7b,44737.687,2026-11-02 03:43:38.661,ALTO,"['microsueno', 'cabeza_caida', 'cansancio_perclos', 'cabeceos']",0.0811,0.2182,0.0168,0.9328,2,3,True,expresión neutral,muestra,6ae8069fd50d4cff3fcadf68,
+6ae806fad50d4cff3fcadf7c,44742.734,2026-11-02 03:43:43.678,ALTO,"['microsueno', 'cabeza_caida', 'cansancio_perclos']",0.0789,0.2182,0.0173,0.9671,2,2,True,expresión neutral,muestra,6ae8069fd50d4cff3fcadf68,
+6ae806fad50d4cff3fcadf7d,44747.875,2026-11-02 03:43:48.862,ALTO,"['microsueno', 'cabeza_caida', 'cansancio_perclos']",0.0833,0.2182,0.0188,1.0,2,2,True,expresión neutral,muestra,6ae8069fd50d4cff3fcadf68,
+6ae806fad50d4cff3fcadf7e,44752.937,2026-11-02 03:43:53.882,ALTO,"['microsueno', 'cabeza_caida', 'cansancio_perclos']",0.1191,0.2182,0.0155,1.0,2,1,True,expresión neutral,muestra,6ae8069fd50d4cff3fcadf68,
+6ae80700d50d4cff3fcadf7f,44758.046,2026-11-02 03:43:59.017,ALTO,"['microsueno', 'cabeza_caida', 'cansancio_perclos']",0.157,0.2182,0.015,1.0,2,1,True,expresión neutral,muestra,6ae8069fd50d4cff3fcadf68,
+6ae80705d50d4cff3fcadf80,44762.437,2026-11-02 03:44:03.397,MEDIO,['cansancio_perclos'],0.2692,0.2182,0.0107,0.9786,2,1,True,enojo aparente,cansancio_perclos,6ae8069fd50d4cff3fcadf68,ALTO
+6ae80705d50d4cff3fcadf81,44763.093,2026-11-02 03:44:04.069,MEDIO,['cansancio_perclos'],0.3087,0.2182,0.0135,0.972,2,0,True,enojo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae8070ad50d4cff3fcadf82,44768.281,2026-11-02 03:44:09.260,MEDIO,['cansancio_perclos'],0.3269,0.2182,0.0171,0.9317,2,0,True,enojo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae80710d50d4cff3fcadf83,44773.312,2026-11-02 03:44:14.238,MEDIO,['cansancio_perclos'],,0.2182,,0.8994,2,0,False,tristeza aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae80715d50d4cff3fcadf84,44778.328,2026-11-02 03:44:19.259,MEDIO,"['cansancio_perclos', 'rostro_ausente']",,0.2182,,0.8882,2,0,False,tristeza aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae8071ad50d4cff3fcadf85,44783.359,2026-11-02 03:44:24.294,MEDIO,['cansancio_perclos'],,0.2182,,0.8267,2,1,False,incierto,muestra,6ae8069fd50d4cff3fcadf68,
+6ae80720d50d4cff3fcadf86,44788.421,2026-11-02 03:44:29.389,MEDIO,['cansancio_perclos'],0.2626,0.2182,0.3103,0.7801,2,1,True,incierto,muestra,6ae8069fd50d4cff3fcadf68,
+6ae80725d50d4cff3fcadf87,44793.421,2026-11-02 03:44:34.356,MEDIO,['cansancio_perclos'],0.2891,0.2182,0.0465,0.6994,2,1,True,incierto,muestra,6ae8069fd50d4cff3fcadf68,
+6ae8072ad50d4cff3fcadf88,44798.515,2026-11-02 03:44:39.449,MEDIO,['cansancio_perclos'],0.2188,0.2182,0.0059,0.6141,2,1,True,tristeza aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae8072fd50d4cff3fcadf89,44803.515,2026-11-02 03:44:44.444,MEDIO,['cansancio_perclos'],,0.2182,,0.5168,2,1,False,enojo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae80735d50d4cff3fcadf8a,44808.546,2026-11-02 03:44:49.476,MEDIO,"['cansancio_perclos', 'rostro_ausente']",,0.2182,,0.417,2,1,False,enojo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae8073ad50d4cff3fcadf8b,44813.578,2026-11-02 03:44:54.502,MEDIO,['cansancio_perclos'],,0.2182,,0.25,2,1,False,enojo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae8073ad50d4cff3fcadf8c,44814.265,2026-11-02 03:44:55.191,NORMAL,[],,0.2182,,0.2326,2,1,False,enojo aparente,recuperacion,6ae8069fd50d4cff3fcadf68,MEDIO
+6ae8073ad50d4cff3fcadf8d,44815.203,2026-11-02 03:44:56.140,MEDIO,['rostro_ausente'],,0.2182,,0.2067,2,1,False,enojo aparente,rostro_ausente,6ae8069fd50d4cff3fcadf68,NORMAL
+6ae8073fd50d4cff3fcadf8e,44818.812,2026-11-02 03:44:59.779,MEDIO,['distraccion'],0.3349,0.2182,0.139,0.1244,2,1,True,tristeza aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae8073fd50d4cff3fcadf8f,44820.812,2026-11-02 03:45:01.750,NORMAL,[],,0.2182,,0.0881,2,1,False,tristeza aparente,recuperacion,6ae8069fd50d4cff3fcadf68,MEDIO
+6ae8073fd50d4cff3fcadf90,44822.0,2026-11-02 03:45:02.932,MEDIO,['rostro_ausente'],,0.2182,,0.0899,2,1,False,miedo aparente,rostro_ausente,6ae8069fd50d4cff3fcadf68,NORMAL
+6ae80744d50d4cff3fcadf91,44823.812,2026-11-02 03:45:04.746,MEDIO,"['rostro_ausente', 'expresion_negativa']",,0.2182,,0.0944,2,1,False,miedo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae80744d50d4cff3fcadf92,44826.281,2026-11-02 03:45:07.222,NORMAL,[],0.3397,0.2182,0.0214,0.0,0,0,True,miedo aparente,recuperacion,6ae8069fd50d4cff3fcadf68,MEDIO
+6ae80749d50d4cff3fcadf93,44828.937,2026-11-02 03:45:09.868,NORMAL,[],,0.2182,,0.0,0,0,False,miedo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae8074ed50d4cff3fcadf95,44833.984,2026-11-02 03:45:14.947,NORMAL,[],0.3123,0.2182,0.1299,0.0,0,0,True,tristeza aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae80754d50d4cff3fcadf96,44839.046,2026-11-02 03:45:19.986,NORMAL,[],0.3624,0.2182,0.1158,0.0,0,0,True,enojo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae80754d50d4cff3fcadf97,44842.0,2026-11-02 03:45:22.954,MEDIO,['distraccion'],0.5065,0.2182,0.2593,0.0,0,1,True,tristeza aparente,distraccion,6ae8069fd50d4cff3fcadf68,NORMAL
+6ae80759d50d4cff3fcadf98,44844.203,2026-11-02 03:45:25.175,MEDIO,"['cabeceos', 'distraccion', 'expresion_negativa']",0.5541,0.2182,0.1563,0.0,0,3,True,miedo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae8075ed50d4cff3fcadf99,44849.25,2026-11-02 03:45:30.187,MEDIO,"['cabeceos', 'expresion_negativa']",0.2931,0.2182,0.0601,0.0046,0,5,True,miedo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae80763d50d4cff3fcadf9a,44854.265,2026-11-02 03:45:35.240,MEDIO,"['cabeceos', 'expresion_negativa']",0.3032,0.2182,0.0203,0.0035,0,5,True,enojo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae80768d50d4cff3fcadf9b,44859.39,2026-11-02 03:45:40.435,MEDIO,"['cabeceos', 'expresion_negativa']",0.2512,0.2182,0.1438,0.003,0,5,True,enojo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae8076ed50d4cff3fcadf9c,44864.39,2026-11-02 03:45:45.345,MEDIO,"['cabeceos', 'expresion_negativa']",,0.2182,,0.0029,0,5,False,enojo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae8076ed50d4cff3fcadf9d,44869.406,2026-11-02 03:45:50.337,MEDIO,"['cabeceos', 'rostro_ausente', 'expresion_negativa']",,0.2182,,0.0028,0,5,False,tristeza aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae80773d50d4cff3fcadf9e,44874.5,2026-11-02 03:45:55.480,MEDIO,"['cabeceos', 'distraccion', 'expresion_negativa']",0.851,0.2182,0.1668,0.0025,0,6,True,tristeza aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae80787d50d4cff3fcadfa0,44877.062,2026-11-02 03:45:58.003,NORMAL,[],0.288,0.2182,0.0385,0.0,0,0,True,enojo aparente,recuperacion,6ae8069fd50d4cff3fcadf68,MEDIO
+6ae80787d50d4cff3fcadfa1,44879.515,2026-11-02 03:46:00.448,NORMAL,[],0.3145,0.2182,0.0538,0.0645,0,0,True,enojo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae80787d50d4cff3fcadfa2,44884.515,2026-11-02 03:46:05.439,NORMAL,[],,0.2182,,0.0761,0,0,False,expresión neutral,muestra,6ae8069fd50d4cff3fcadf68,
+6ae80787d50d4cff3fcadfa3,44885.921,2026-11-02 03:46:06.849,MEDIO,['distraccion'],0.5509,0.2182,0.0287,0.0686,0,1,True,miedo aparente,distraccion,6ae8069fd50d4cff3fcadf68,NORMAL
+6ae80787d50d4cff3fcadfa4,44888.187,2026-11-02 03:46:09.115,NORMAL,[],0.5034,0.2182,0.0344,0.0507,0,1,True,miedo aparente,recuperacion,6ae8069fd50d4cff3fcadf68,MEDIO
+6ae80787d50d4cff3fcadfa5,44889.562,2026-11-02 03:46:10.548,NORMAL,[],0.3212,0.2182,0.0489,0.0449,0,1,True,miedo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae80787d50d4cff3fcadfa6,44893.781,2026-11-02 03:46:14.722,BAJO,['expresion_negativa'],,0.2182,,0.033,0,2,False,expresión neutral,expresion_negativa,6ae8069fd50d4cff3fcadf68,NORMAL
+6ae8078cd50d4cff3fcadfa7,44894.625,2026-11-02 03:46:15.562,BAJO,['expresion_negativa'],0.5816,0.2182,0.0132,0.0315,0,2,True,enojo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae8078cd50d4cff3fcadfa8,44895.906,2026-11-02 03:46:16.847,MEDIO,"['rostro_ausente', 'expresion_negativa']",,0.2182,,0.031,0,2,False,enojo aparente,rostro_ausente,6ae8069fd50d4cff3fcadf68,BAJO
+6ae8078cd50d4cff3fcadfa9,44899.703,2026-11-02 03:46:20.661,MEDIO,['expresion_negativa'],0.3329,0.2182,0.0039,0.0257,0,2,True,enojo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae8078cd50d4cff3fcadfaa,44899.828,2026-11-02 03:46:20.797,BAJO,['expresion_negativa'],0.334,0.2182,0.0056,0.0256,0,2,True,enojo aparente,expresion_negativa,6ae8069fd50d4cff3fcadf68,MEDIO
+6ae80792d50d4cff3fcadfab,44904.718,2026-11-02 03:46:25.640,BAJO,['expresion_negativa'],,0.2182,,0.0222,0,2,False,miedo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae80797d50d4cff3fcadfac,44906.281,2026-11-02 03:46:27.232,MEDIO,"['distraccion', 'expresion_negativa']",0.7693,0.2182,0.0465,0.0215,0,2,True,expresión neutral,distraccion,6ae8069fd50d4cff3fcadf68,BAJO
+6ae80797d50d4cff3fcadfad,44909.718,2026-11-02 03:46:30.644,MEDIO,['expresion_negativa'],0.2739,0.2182,0.0134,0.0192,0,2,True,tristeza aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae80797d50d4cff3fcadfae,44909.796,2026-11-02 03:46:30.763,BAJO,['expresion_negativa'],0.2731,0.2182,0.0144,0.0191,0,2,True,tristeza aparente,expresion_negativa,6ae8069fd50d4cff3fcadf68,MEDIO
+6ae8079cd50d4cff3fcadfaf,44913.64,2026-11-02 03:46:34.586,MEDIO,"['distraccion', 'expresion_negativa']",0.6236,0.2182,0.0383,0.0175,0,2,True,expresión neutral,distraccion,6ae8069fd50d4cff3fcadf68,BAJO
+6ae8079cd50d4cff3fcadfb0,44914.734,2026-11-02 03:46:35.658,MEDIO,"['rostro_ausente', 'expresion_negativa']",,0.2182,,0.0172,0,2,False,incierto,muestra,6ae8069fd50d4cff3fcadf68,
+6ae807a1d50d4cff3fcadfb1,44916.89,2026-11-02 03:46:37.823,BAJO,['expresion_negativa'],0.3109,0.2182,0.0095,0.0162,0,2,True,enojo aparente,expresion_negativa,6ae8069fd50d4cff3fcadf68,MEDIO
+6ae807a1d50d4cff3fcadfb2,44919.796,2026-11-02 03:46:40.725,BAJO,['expresion_negativa'],0.2979,0.2182,0.031,0.0147,0,2,True,enojo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae807a6d50d4cff3fcadfb3,44924.953,2026-11-02 03:46:45.922,BAJO,['expresion_negativa'],0.2809,0.2182,0.03,0.0138,0,2,True,incierto,muestra,6ae8069fd50d4cff3fcadf68,
+6ae807abd50d4cff3fcadfb4,44929.015,2026-11-02 03:46:49.967,NORMAL,[],0.3156,0.2182,0.056,0.0128,0,2,True,expresión neutral,recuperacion,6ae8069fd50d4cff3fcadf68,BAJO
+6ae807abd50d4cff3fcadfb5,44929.953,2026-11-02 03:46:50.879,NORMAL,[],0.3158,0.2182,0.048,0.0124,0,2,True,enojo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae807b1d50d4cff3fcadfb6,44934.984,2026-11-02 03:46:55.930,NORMAL,[],0.3219,0.2182,0.0381,0.0113,0,2,True,expresión neutral,muestra,6ae8069fd50d4cff3fcadf68,
+6ae807b6d50d4cff3fcadfb7,44940.031,2026-11-02 03:47:00.996,NORMAL,[],0.36,0.2182,0.0608,0.0081,0,2,True,tristeza aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae807bbd50d4cff3fcadfb8,44942.125,2026-11-02 03:47:03.095,MEDIO,['cabeceos'],0.5929,0.2182,0.1043,0.005,0,3,True,enojo aparente,cabeceos,6ae8069fd50d4cff3fcadf68,NORMAL
+6ae807bbd50d4cff3fcadfb9,44945.031,2026-11-02 03:47:05.974,MEDIO,"['cabeceos', 'expresion_negativa']",0.3064,0.2182,0.0585,0.0,0,3,True,enojo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae807c1d50d4cff3fcadfba,44947.359,2026-11-02 03:47:08.295,BAJO,['expresion_negativa'],0.2871,0.2182,0.0797,0.0,0,2,True,enojo aparente,expresion_negativa,6ae8069fd50d4cff3fcadf68,MEDIO
+6ae807c1d50d4cff3fcadfbb,44949.437,2026-11-02 03:47:10.377,MEDIO,"['cabeceos', 'expresion_negativa']",0.6655,0.2182,0.1308,0.0,0,3,True,enojo aparente,cabeceos,6ae8069fd50d4cff3fcadf68,BAJO
+6ae807c1d50d4cff3fcadfbc,44950.046,2026-11-02 03:47:10.978,MEDIO,"['cabeceos', 'expresion_negativa']",,0.2182,,0.0,0,3,False,enojo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae807c6d50d4cff3fcadfbd,44955.046,2026-11-02 03:47:15.991,MEDIO,"['cabeceos', 'expresion_negativa']",0.2747,0.2182,0.1606,0.0,0,3,True,expresión neutral,muestra,6ae8069fd50d4cff3fcadf68,
+6ae807cbd50d4cff3fcadfbe,44960.046,2026-11-02 03:47:20.980,MEDIO,['cabeceos'],0.2892,0.2182,0.2232,0.0,0,3,True,expresión neutral,muestra,6ae8069fd50d4cff3fcadf68,
+6ae807d0d50d4cff3fcadfc0,44965.218,2026-11-02 03:47:26.213,MEDIO,['cabeceos'],0.2705,0.2182,0.1218,0.0,0,3,True,expresión neutral,muestra,6ae8069fd50d4cff3fcadf68,
+6ae807d6d50d4cff3fcadfc1,44970.218,2026-11-02 03:47:31.160,MEDIO,['cabeceos'],0.3227,0.2182,0.0743,0.0,0,3,True,expresión neutral,muestra,6ae8069fd50d4cff3fcadf68,
+6ae807dbd50d4cff3fcadfc2,44975.25,2026-11-02 03:47:36.241,MEDIO,['cabeceos'],0.2794,0.2182,0.0805,0.0,0,3,True,enojo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae807e1d50d4cff3fcadfc3,44980.515,2026-11-02 03:47:41.481,MEDIO,['cabeceos'],0.2557,0.2182,0.0272,0.0058,0,3,True,expresión neutral,muestra,6ae8069fd50d4cff3fcadf68,
+6ae807e6d50d4cff3fcadfc4,44985.546,2026-11-02 03:47:46.470,MEDIO,['cabeceos'],,0.2182,,0.0207,0,3,False,expresión neutral,muestra,6ae8069fd50d4cff3fcadf68,
+6ae807ebd50d4cff3fcadfc5,44990.593,2026-11-02 03:47:51.547,MEDIO,"['cabeceos', 'rostro_ausente']",,0.2182,,0.0231,0,3,False,tristeza aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae807f0d50d4cff3fcadfc6,44995.671,2026-11-02 03:47:56.618,MEDIO,"['cabeceos', 'rostro_ausente']",,0.2182,,0.024,0,6,False,miedo aparente,muestra,6ae8069fd50d4cff3fcadf68,
+6ae807f3d50d4cff3fcadfc7,45000.703,2026-11-02 03:48:01.672,MEDIO,"['cabeceos', 'expresion_negativa']",0.3265,0.2182,0.0425,0.0244,0,6,True,miedo aparente,muestra,6ae8069fd50d4cff3fcadf68,
