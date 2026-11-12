@@ -66,9 +66,10 @@ OpenCode (Big Pickle, OpenCode Zen): USD 0, 58.5K tokens en la etapa de umbrales
 
 ## Prompts clave
 
-PENDIENTE: el estudiante no entregó los prompts. Pegue aquí los que más influyeron (uno por viñeta, indicando etapa y herramienta).
-
--
+- **(a) Configuración, Claude Code:** configurar los agentes: `AGENTS.md`, `CLAUDE.md`, permisos, hooks, MCP, `opencode.jsonc`, 6 skills, 2 subagentes y la bitácora, con plan previo.
+- **(b) Diagnóstico del MCP de mongodb, Claude Code:** "formula dos hipótesis, diseña un comando que distinga entre ellas y solo después propón el cambio".
+- **(c) Barrido de umbrales, Claude Code y OpenCode:** prompt con formato COREV (contexto, objetivo, restricciones, entregable, verificación), idéntico en las dos consolas.
+- **(d) Scripts que reemplazan los notebooks, Claude Code:** los cinco scripts que reemplazan los notebooks 00, 03 y 04, un commit por script.
 
 ## Qué salió mal y cómo se detectó
 
@@ -81,3 +82,5 @@ PENDIENTE: el estudiante no entregó los prompts. Pegue aquí los que más influ
 ## Conclusión
 
 (escrita por el estudiante)
+
+En la tarea de umbrales las dos consolas terminaron casi igual de rápido (5 min Claude Code con Sonnet 5.5 y 4 min OpenCode con Big Pickle), sin correcciones y con pytest en verde, y las dos recomendaron 1,0 s. La diferencia estuvo en la calidad: Claude Code escribió dos pruebas en vez de una, comprobó la reproducibilidad y explicó mejor los límites del experimento, aunque agregó cosas que no le pedí. Cada agente generó sus propios conductores sintéticos, por eso con los valores por defecto uno dio 90 % y el otro 75 %: el mismo prompt no garantiza el mismo experimento. Para una tarea corta y bien especificada el modelo gratis fue suficiente. Pagaría por el modelo comercial en tareas largas y de diagnóstico, como arreglar el MCP de MongoDB o descubrir por qué fallaba la CNN. También vi que el subagente revisor con Opus fue lo que más cupo gastó, así que para revisiones rutinarias conviene un modelo más barato.
