@@ -2,7 +2,7 @@
   "mcpServers": {
     "mongodb": {
       "command": "cmd",
-      "args": ["/c", "npx", "-y", "mongodb-mcp-server"],
+      "args": ["/c", "mongodb-mcp-server"],
       "env": {
         "MDB_MCP_READ_ONLY": "true",
         "MDB_MCP_CONNECTION_STRING": "mongodb://localhost:27017/driveguard_lab"
